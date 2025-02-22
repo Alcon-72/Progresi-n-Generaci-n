@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagenYARA/WebMariana.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Sign {
+    align-items: center;
+    flex-direction: column;
+    width: 510px;
+    background: transparent;
+    color: #fff;
+    border-radius: 40px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.Sign form {
+    width: 100%;
+    padding: 30px 40px;
+    background: transparent;
+    color: #fff;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+/* -50px es para compensar la posicion */
+form:hover {
+    width: 520px;
+    margin: -50px 0 -5px -50px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+
+.Sign img {
+    width: 100%;
+    padding: 4%;
+}
+
+.Sign .input-box1 {
+    width: 100%;
+    height: 50px;
+    margin:10px 0 30px 0;
+}
+
+.input-box1 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+}
+
+.input-box1 input::placeholder {
+    color: #fff;
+}
+
+.Sign .input-box2 {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box2 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+}
+
+.input-box2 input::placeholder {
+    color: #fff;
+}
+
+.Sign .recuerdame {
+    display: flex;
+    justify-content:space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+.recuerdame label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.recuerdame a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recuerdame a:hover {
+    text-decoration: underline;
+}
+
+.Sign .btn {
+    width: 100%;
+    height: 45px;
+    background: #021a1e;
+    color: #f8f9fa;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+/* el atributo transform es bueno para sustituir el width */
+
+.Sign .btn:hover {
+    font-size: 20px;
+    background-color: #198754;
+    transition: 0.4s;
+    /*transform: scale(1.05);*/
+}
+
+.Sign .sincuenta {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.sincuenta p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sincuenta p a:hover {
+    text-decoration: underline;
+}
+
+/* para el javascript */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #021a1e;
+    margin: 3% auto;
+    padding: 0px;
+    border: 2px solid rgba(200, 200, 0, .5);
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+    text-align: left;
+    color: #e9ecef;
+}
+
+.modal-content .close {
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: rgba(200, 200, 0, .4);
+    text-decoration: none;
+}
+
+.modal-content .logobienvenida {
+    margin: -70px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content img {
+    width: 500px;
+}
+
+.modal-content h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: "Poppins", serif;
+}
+
+.modal-content .text-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.modal-content p {
+    margin: 1% 0 3% 0;
+    font-family: "Poppins", serif;
+    width: 500px;
+    font-size: 17px;
+}
+
+.modal-content .boton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size:17px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.modal-content a {
+    margin: 2% 0 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
