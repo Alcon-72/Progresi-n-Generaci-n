@@ -172,7 +172,7 @@ form:hover {
 
 .modal-content {
     background-color: #021a1e;
-    margin: 3% auto;
+    margin: 7% auto;
     padding: 0px;
     border: 2px solid rgba(200, 200, 0, .5);
     width: 50%;
@@ -248,4 +248,5 @@ form:hover {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: #aaa;
 }
